@@ -1,0 +1,32 @@
+.movie-item-cards {
+  margin: 70px 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  text-align: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .movie-item-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1135px) {
+  .movie-item-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .movie-item-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .movie-item-cards {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,13 @@
+.movie {
+  color: #e7e9ea;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.movie-wrapper {
+  padding: 50px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), #001a36);
+}

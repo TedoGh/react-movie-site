@@ -1,0 +1,20 @@
+.movie-list {
+  padding: 15px 0;
+}
+
+.movie-list-title {
+  color: #02254b;
+  font-size: 32px;
+  margin: 45px 0;
+}
+
+.movie-list-swiper-arrows {
+  display: flex;
+  gap: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .movie-list-swiper-arrows {
+    display: none;
+  }
+}

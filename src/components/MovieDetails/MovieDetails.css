@@ -1,0 +1,50 @@
+.movie-details {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.movie-title {
+  margin: 25px 0;
+}
+
+.movie-imdb-info {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.movie-detail-info {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.movie-detail-info a {
+  color: #e7e9ea !important;
+}
+
+.movie-description {
+  max-width: 1000px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .movie-details {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .movie-poster-img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .movie-detail-box {
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 28px;
+  }
+}

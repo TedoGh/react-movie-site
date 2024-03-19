@@ -1,0 +1,26 @@
+.actor {
+  padding: 70px;
+}
+
+.actor-info {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.actor-info img {
+  border-radius: 20px;
+}
+
+.actor-info-details p {
+  line-height: 24px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .actor-info {
+    flex-direction: column;
+  }
+  .actor-info-details h1 {
+    text-align: center;
+  }
+}
