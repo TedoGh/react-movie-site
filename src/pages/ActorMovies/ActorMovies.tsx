@@ -10,7 +10,7 @@ import { IMovieList } from "../../interfaces/IMovie";
 export default function ActorMovies() {
   const { actorId } = useParams<string>();
   const actorinfoUrl = `${process.env.REACT_APP_API_URL}/person/${actorId}?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`;
-  const apiUrl = `${process.env.REACT_APP_API_URL}/person//${actorId}/movie_credits?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`;
+  const apiUrl = `${process.env.REACT_APP_API_URL}/person/${actorId}/movie_credits?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`;
   const { data: personInfo, error: personInfoError } = useFetch(
     actorinfoUrl,
     ""
