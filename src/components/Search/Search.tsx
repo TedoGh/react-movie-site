@@ -10,7 +10,7 @@ import axios from "axios";
 
 interface ISearchResult {
   results: IMovieList[];
-  total_results: number;
+  total_results: number | null;
 }
 
 const Search = () => {
@@ -18,7 +18,7 @@ const Search = () => {
   const [searchItem, setSearchItem] = useState<string>("");
   const [searchMovie, setSearchMovie] = useState<ISearchResult>({
     results: [],
-    total_results: 0,
+    total_results: null,
   });
   const [error, setError] = useState<boolean>(false);
   const path = useLocation();
@@ -43,7 +43,7 @@ const Search = () => {
     } else {
       setSearchMovie({
         results: [],
-        total_results: 0,
+        total_results: null,
       });
     }
   }, [debouncedSearch]);
